@@ -50,6 +50,6 @@ for commit in commit_list:
                 print(f"Writing contents for {filename}")
                 f.write(file_contents.decoded_content.decode("utf-8"))
         except:
-            print("Could not find file contents for:", filepath)
+            print(f"Could not find file contents for: {filepath}")
 
     time.sleep(1)

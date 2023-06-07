@@ -37,16 +37,12 @@ class GptApi:
 
         print("ChatGPT: Thanks for the conversation!")
 
-    def write_conversation_to_file(self, conversation_name):
-        if not os.path.exists(f"./conversations/{conversation_name}"):
-            os.makedirs(f"./conversations/{conversation_name}")
+    def write_conversation_to_file(self, file_path):
+        if not os.path.exists(file_path):
+            os.makedirs(file_path)
 
-        conversation_text = open(
-            f"./conversations/{conversation_name}/conversation.txt", "w"
-        )
-        conversation_json_file = open(
-            f"./conversations/{conversation_name}/conversation.json", "w"
-        )
+        conversation_text = open(f"{file_path}/conversation.txt", "w")
+        conversation_json_file = open(f"{file_path}/conversation.json", "w")
         conversation_dict = {"messages": []}
 
         for message in self.conversation:
@@ -59,3 +55,6 @@ class GptApi:
         conversation_json = json.dumps(conversation_dict)
         conversation_json_file.write(conversation_json)
         conversation_json_file.close()
+
+    def clear_conversation(self):
+        self.conversation = []

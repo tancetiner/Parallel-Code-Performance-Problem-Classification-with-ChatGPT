@@ -21,7 +21,7 @@ for folder in classification_folders:
     number_of_wrong_format_responses = 0
     number_of_wrong_responses = 0
     number_of_correct_responses = 0
-    log = open(f"{folder}.txt", "w")
+    log = open(f"result_evaluations/{folder}.txt", "w")
     for commit in commit_list:
         folder_idx = commit["Code Folder Index"]
         response_folder_path = f"{folder}/{folder_idx}"
