@@ -1,0 +1,31 @@
+{
+  "is_development_code": {
+    "h": "True",
+    "cpp": "True",
+    "hpp": "True",
+    "c": "True",
+    "Z14": "True",
+    "C": "True",
+    "cl": "True",
+    "cc": "True",
+    "bib": "False",
+    "py": "True",
+    "cuh": "True",
+    "cu": "True",
+    "HASWELL": "True",
+    "H": "True",
+    "makefile": "False",
+    "F": "True",
+    "clh": "True",
+    "txt": "False",
+    "rst": "False",
+    "Makefile": "False",
+    "cmakein": "False",
+    "cmake": "False",
+    "md": "False",
+    "ml": "True",
+    "codelets": "False",
+    "sh": "False",
+    "in": "False"
+  }
+}
